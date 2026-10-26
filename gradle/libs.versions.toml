@@ -1,0 +1,12 @@
+[versions]
+agp = "9.4.1"
+activity = "1.13.0"
+providerevents = "1.0.0-beta01"
+
+[libraries]
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-credentials-providerevents = { group = "androidx.credentials.providerevents", name = "providerevents", version.ref = "providerevents" }
+androidx-credentials-providerevents-play-services = { group = "androidx.credentials.providerevents", name = "providerevents-play-services", version.ref = "providerevents" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }

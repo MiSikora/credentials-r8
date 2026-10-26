@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <queries>
+        <intent>
+            <action android:name="androidx.identitycredentials.action.IMPORT_CREDENTIALS" />
+            <data
+                android:mimeType="application/octet-stream"
+                android:scheme="content" />
+        </intent>
+        <intent>
+            <action android:name="androidx.identitycredentials.action.IMPORT_CREDENTIALS" />
+            <data android:scheme="content" />
+        </intent>
+    </queries>
+
+    <application
+        android:label="Credentials"
+        android:theme="@android:style/Theme.Material.Light">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
